@@ -211,7 +211,7 @@ Pod::Spec.new do |s|
 
   s.source_files = [ '**/*.{c,h}' ]
   s.exclude_files = [ '**/*_in.h', '**/test/**', '**/*_ossl.{c,h}', '**/*_linux_*' ]
-  s.public_header_files = [ 'include/*.h' ]
+  s.public_header_files = [ 'include/*.h','crypto/include/*.h' ]
   s.private_header_files = [ 'include/*_priv.h' ]
   s.header_dir = 'srtp'
 
